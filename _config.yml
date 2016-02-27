@@ -1,7 +1,8 @@
 # Site settings
 title:Vincent Beauzee
 email:vincentbeauzee@gmail.com
-description: Personnal website
+description: > Personnal website 
+# this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
