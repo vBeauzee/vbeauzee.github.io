@@ -28,10 +28,10 @@ a {
 }
 
 a.red-bg {
-	color: white;
+	color:#FFFFFF;
     &:hover,
     &:focus {
-        color: darken(white, 20%);
+        color: darken(#FFFFFF, 20%);
     }
 }
 
