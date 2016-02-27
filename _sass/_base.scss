@@ -27,6 +27,14 @@ a {
     }
 }
 
+a.bg-primary {
+	color: white;
+    &:hover,
+    &:focus {
+        color: darken(white, 20%);
+    }
+}
+
 h1,
 h2,
 h3,
@@ -44,14 +52,6 @@ p {
 
 .bg-primary {
     background-color: $theme-primary;
-}
-
-a.bg-primary {
-	color: white;
-    &:hover,
-    &:focus {
-        color: darken(white, 20%);
-    }
 }
 
 .bg-dark {
