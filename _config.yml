@@ -8,6 +8,7 @@ url: "" # the base hostname & protocol for your site
 
 twitter_username:VincentBeauzee
 github_username:vBeauzee
+linkedin_url:vincent-beauzee-57396037
 
 # Build settings
 markdown: kramdown
