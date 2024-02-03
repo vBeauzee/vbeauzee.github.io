@@ -1,14 +1,12 @@
 # Site settings
-title:Vincent Beauzee
-email:vincentbeauzee@gmail.com
-description:Personnal website 
+title:TyGAMES
+email:hello@ty.games
+description:TyGAMES website 
 # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
-twitter_username:VincentBeauzee
-github_username:vBeauzee
-linkedin_url:vincent-beauzee-57396037
+twitter_username:tygamesbzh
 
 # Build settings
 markdown: kramdown

@@ -50,6 +50,22 @@ p {
     margin-bottom: 20px;
 }
 
+i.light {
+    color: white;
+}
+
+.nogueules {
+    text-align: center;
+    width: 250px;
+    height: 250px;
+}
+
+.nogueules img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%
+}
+
 .bg-primary {
     background-color: $theme-primary;
 }
@@ -86,7 +102,6 @@ aside {
         color: $theme-primary;
         @include sans-serif-font;
         font-weight: 700;
-        text-transform: uppercase;
         &:hover,
         &:focus {
             color: darken($theme-primary, 10%);
@@ -163,7 +178,7 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('../img/header-ttk.jpg');
     text-align: center;
     color: white;
     .header-content {
@@ -356,4 +371,3 @@ img::-moz-selection {
 body {
     -webkit-tap-highlight-color: $theme-dark;
 }
-
