@@ -1,17 +1,16 @@
 eyebrow: IT engineering · since 2011
 title: Full-stack, DevOps & architecture.
 intro: Telecom, accounting, e-commerce and IoT software, from the first architecture sketch to production.
-logos: [java, spring, docker, kubernetes]
 
 skills:
   - name: Languages
-    items: Java, C#, C/C++, PHP, TypeScript, JavaScript
+    items: [Java, "C#", C/C++, PHP, TypeScript, JavaScript]
   - name: Frameworks
-    items: Spring Boot, Vue, Angular 2+, Flutter, Symfony, .NET
+    items: [Spring Boot, Vue, Angular 2+, Flutter, Symfony, .NET]
   - name: DevOps
-    items: Docker, Kubernetes, Docker Swarm, Jenkins, GitLab CI, OVH, Azure
+    items: [Docker, Kubernetes, Docker Swarm, Jenkins, GitLab CI, OVH, Azure]
   - name: Data & platforms
-    items: PostgreSQL, MongoDB, RabbitMQ, Aerospike · UNIX, iOS, Android
+    items: [PostgreSQL, MongoDB, RabbitMQ, Aerospike, UNIX, iOS, Android]
 
 experience_title: Experience
 

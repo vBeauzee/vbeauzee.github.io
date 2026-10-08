@@ -383,20 +383,10 @@ a.tab:hover {
 
 .hero {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 40px;
-  padding-top: 56px;
-  padding-bottom: 64px;
-}
-
-.hero-text {
-  display: flex;
   flex-direction: column;
   gap: 18px;
-  flex: 999 1 560px;
-  min-width: 0;
+  padding-top: 56px;
+  padding-bottom: 64px;
 }
 
 .eyebrow {
@@ -414,15 +404,9 @@ a.tab:hover {
 }
 
 .hero-intro {
-  max-width: 660px;
   font-size: 19px;
   line-height: 1.55;
   color: var(--band-soft);
-}
-
-.hero-logos {
-  gap: 10px;
-  flex: 1 1 340px;
 }
 
 .skills {
@@ -450,8 +434,9 @@ a.tab:hover {
   color: var(--accent);
 }
 
-.skill p {
-  line-height: 1.6;
+.skill .details {
+  gap: 6px;
+  margin-top: 0;
 }
 
 .section {

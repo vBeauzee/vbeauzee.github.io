@@ -1,32 +1,31 @@
 eyebrow: Game development · 10 years
-title: Gameplay, ports & performance.
-intro: Mobile and console ports, gameplay and tools, gamefeel and VFX, and profiling on Unity and in-house C++ engines.
-logos: [unity, godot, cplusplus, csharp]
+title: Programming Gameplay, Gamefeel, Tools & Ports.
+intro: Gameplay, tool & UI programmer. Gamefeel & VFX. Mobile and console ports. Performance and profiling.
 
 skills:
   - name: Languages
-    items: C#, C, C++, Objective-C
+    items: ["C#", C, C++, Objective-C, Java, Lua]
   - name: Engines
-    items: Unity, Godot, Unreal, SDL, SFML, in-house C++ engines
-  - name: Specialties
-    items: Console & mobile ports, gamefeel & VFX, profiling & optimisation
+    items: [Unity, SDL, SFML, C++ engines (in-house)]
+  - name: Skills
+    items: ["Gameplay, tool & UI programmer", Console & mobile ports, Gamefeel & VFX, Profiling & optimisation]
   - name: Tools
-    items: Perforce, Git, Xcode, Visual Studio, Dear ImGui, PIX
+    items: [Visual Studio, Rider, Perforce, Git, Xcode, Dear ImGui, PIX]
 
-experience_title: Games & studios
+experience_title: Games
 
 experiences:
   - title: Shotgun King
     studio: Puncake Délicieux · Headbang Club
-    period: 2024 – 2026
+    period: 2025
     role: Lead mobile · iOS tech lead
     image: /img/gamedev/sk.jpg
     details:
-      - Led the mobile porting team converting Shotgun King to iOS (iPhone and iPad); lead and support on the Android version.
-      - "Custom C++ engine built on SDL2: Sugar-Engine, in-house tech inspired by PICO-8."
-      - iOS integration in Objective-C++ with Xcode.
-      - The original game sold 500k units on Steam.
-    stack: [C++, Objective-C++, SDL2, Xcode, iOS, Android]
+      - Led the mobile porting team. Port Shotgun King to iOS (iPhone and iPad); lead and support on the Android version.
+      - Sugar-Engine, in-house tech inspired by PICO-8 made with C++ and SDL2 and Lua.
+      - iOS integration with Objective-C++ in Xcode.
+      - More than 500k units on Steam.
+    stack: [C++, Objective-C++, SDL2, Xcode, Lua, iOS, Android]
     links:
       - label: App Store
         url: https://apps.apple.com/fr/app/shotgun-king/id6744170498
@@ -35,7 +34,7 @@ experiences:
 
   - title: DeathTower
     studio: Headbang Club
-    period: 2024 – 2026
+    period: 2026
     role: Lead gamefeel, VFX & weapons
     image: ""
     label: DeathTower
@@ -51,13 +50,12 @@ experiences:
 
   - title: Fretless – The Wrath of Riffson
     studio: Ritual Studios
-    period: 2024 – 2026
+    period: 2024
     role: Gameplay & tools programmer
     image: /img/gamedev/fretless.jpg
     details:
       - Built level-design tools and enemy behaviour.
-      - Performance consulting with the Unity frame debugger and memory profiler.
-      - Stars the popular musician and YouTuber Rob Scallon.
+      - Performance consulting.
       - US-based team, working remotely.
     stack: [Unity, "C#", Perforce, Visual Studio]
     links:
@@ -66,21 +64,21 @@ experiences:
 
   - title: Minishoot’ Adventures
     studio: Seaven Studio
-    period: 2024 – 2026
-    role: Xbox porting engineer
+    period: 2025
+    role: XBOX porting engineer
     image: /img/gamedev/minishoot.jpg
     details:
-      - Xbox port and Game Pass integration.
+      - XBOX port and Game Pass integration.
       - Ongoing support on the Xbox build.
-      - The game sold more than 1M units on Steam.
+      - More than 1M units on Steam.
     stack: [Unity, "C#", Xbox, Game Pass]
     links:
-      - label: Xbox Store
+      - label: XBOX Store
         url: https://www.xbox.com/fr-FR/games/store/minishoot-adventures/9N5PKH0KW2L1
 
   - title: "Battlestar Galactica: Scattered Hopes"
     studio: Alt-Shift
-    period: 2024 – 2026
+    period: 2025
     role: Performance & optimisation consultant
     image: /img/gamedev/bsg3.jpg
     details:
@@ -112,9 +110,12 @@ experiences:
     image: /img/gamedev/tygames.jpg
     details:
       - Co-founded a cooperative video game distributor (SCIC) that opens digital stores and consoles to indie creators and pools technical and accounting costs.
-      - Set up the technical, administrative and banking side with Google Play, the App Store, Steam, GOG, Humble Store, Nintendo eShop, PlayStation Store and Xbox Store.
-      - Portfolio of 10 indie games on 11 platforms, with partners in the USA, Japan, Poland and Ireland.
+      - Set up the technical, administrative and banking side with Google Play, the App Store, Steam, GOG, Humble Store, Nintendo eShop, PlayStation Store, Xbox Store (and more).
+      - Portfolio of 13 indie games on 15 platforms, with partners in the USA, Japan, Poland, Ireland, Brazil, Korea and more.
       - Business development, negotiation and contract management with studios.
+      - Technical support for indie studios on performance and porting.
+      - Creative consulting for indie studios.
+      - Technical director for the in-house tech for accounting and royalties automation.
     stack: [Publishing, Console & store relations, Contracts]
     links:
       - label: ty.games
@@ -126,9 +127,8 @@ experiences:
     role: Creative director & programmer
     image: /img/gamedev/psr.jpg
     details:
-      - Creative direction.
-      - Programming.
-      - Distribution.
+      - Creative direction and game design.
+      - Programming Java LibGDX.
     stack: [Creative direction, Programming, Distribution]
     links:
       - label: Steam

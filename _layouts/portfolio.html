@@ -13,14 +13,9 @@ layout: default
   </header>
 
   <section class="wrap hero">
-    <div class="hero-text">
-      <p class="eyebrow">{{ d.eyebrow }}</p>
-      <h1>{{ d.title }}</h1>
-      <p class="hero-intro">{{ d.intro }}</p>
-    </div>
-    <div class="logo-grid hero-logos">
-      {% for logo in d.logos %}{% include logo.html name=logo %}{% endfor %}
-    </div>
+    <p class="eyebrow">{{ d.eyebrow }}</p>
+    <h1>{{ d.title }}</h1>
+    <p class="hero-intro">{{ d.intro }}</p>
   </section>
 </div>
 
@@ -29,7 +24,9 @@ layout: default
     {% for group in d.skills %}
     <div class="skill">
       <h2 class="skill-name">{{ group.name }}</h2>
-      <p>{{ group.items }}</p>
+      <ul class="details">
+        {% for item in group.items %}<li>{{ item }}</li>{% endfor %}
+      </ul>
     </div>
     {% endfor %}
   </section>
