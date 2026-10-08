@@ -3,7 +3,8 @@
   --purple: #552583;
   --ink: #120D02;
   --night: #0F0B14;
-  --radius: 20px;
+  --cut: 22px;
+  --cut-sm: 10px;
 }
 
 *,
@@ -81,24 +82,83 @@ a:focus-visible {
   gap: 8px;
   min-height: 44px;
   padding: 0 16px;
-  border: 1px solid #2E2340;
-  border-radius: 999px;
+  --bw: 1px;
+  --b-line: #2E2340;
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
-  transition: background .2s, border-color .2s;
 }
 
 .pill:hover {
-  background: #241A30;
-  border-color: var(--gold);
+  --b-fill: #241A30;
+  --b-line: var(--gold);
+}
+
+.pill-gamedev:hover {
+  --b-line: #C9A6F2;
 }
 
 .pill-lg {
   min-height: 48px;
   padding: 0 18px;
-  background: #1B1424;
+  --b-fill: #1B1424;
   font-size: 16px;
+}
+
+.pill,
+.back,
+.tab,
+.ext,
+.footer-link,
+.footer-switch,
+.door-arrow {
+  position: relative;
+  isolation: isolate;
+}
+
+.pill::before,
+.pill::after,
+.back::before,
+.back::after,
+.tab::before,
+.tab::after,
+.ext::before,
+.ext::after,
+.footer-link::before,
+.footer-link::after,
+.footer-switch::before,
+.footer-switch::after,
+.door-arrow::before,
+.door-arrow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  --c: var(--cut-sm);
+  clip-path: polygon(var(--c) 0, 100% 0, 100% calc(100% - var(--c)), calc(100% - var(--c)) 100%, 0 100%, 0 var(--c));
+  transition: background .2s;
+}
+
+.pill::before,
+.back::before,
+.tab::before,
+.ext::before,
+.footer-link::before,
+.footer-switch::before,
+.door-arrow::before {
+  background: var(--b-line, transparent);
+}
+
+.pill::after,
+.back::after,
+.tab::after,
+.ext::after,
+.footer-link::after,
+.footer-switch::after,
+.door-arrow::after {
+  inset: var(--bw, 0px);
+  --c: calc(var(--cut-sm) - var(--bw, 0px) * .414);
+  background: var(--b-fill, transparent);
 }
 
 .logo-grid {
@@ -113,7 +173,8 @@ a:focus-visible {
   justify-content: center;
   aspect-ratio: 1 / 1;
   background: #FFFFFF;
-  border-radius: 14px;
+  --c: 14px;
+  clip-path: polygon(var(--c) 0, 100% 0, 100% calc(100% - var(--c)), calc(100% - var(--c)) 100%, 0 100%, 0 var(--c));
 }
 
 .logo-tile img {
@@ -144,13 +205,23 @@ a:focus-visible {
 }
 
 .avatar {
+  display: block;
+  flex: none;
+  padding: 2px;
+  background: var(--purple);
+  --c: var(--cut);
+  clip-path: polygon(var(--c) 0, 100% 0, 100% calc(100% - var(--c)), calc(100% - var(--c)) 100%, 0 100%, 0 var(--c));
+}
+
+.avatar img {
+  display: block;
   width: 128px;
   height: 136px;
   object-fit: cover;
   image-rendering: pixelated;
-  border: 2px solid var(--purple);
-  border-radius: var(--radius);
   background: #2A2A2A;
+  --c: calc(var(--cut) - .8px);
+  clip-path: polygon(var(--c) 0, 100% 0, 100% calc(100% - var(--c)), calc(100% - var(--c)) 100%, 0 100%, 0 var(--c));
 }
 
 .intro-text {
@@ -184,9 +255,8 @@ a:focus-visible {
   flex-direction: column;
   gap: 28px;
   padding: 32px;
-  border-radius: 24px;
   text-decoration: none;
-  transition: transform .25s ease, box-shadow .25s ease;
+  transition: transform .25s ease, filter .25s ease;
 }
 
 .door:hover {
@@ -194,21 +264,21 @@ a:focus-visible {
 }
 
 .door-it {
-  background: var(--gold);
+  --card-bg: var(--gold);
   color: var(--ink);
 }
 
 .door-it:hover {
-  box-shadow: 0 24px 60px rgba(253, 185, 39, .3);
+  filter: drop-shadow(0 24px 30px rgba(253, 185, 39, .3));
 }
 
 .door-gamedev {
-  background: var(--purple);
+  --card-bg: var(--purple);
   color: #FFFFFF;
 }
 
 .door-gamedev:hover {
-  box-shadow: 0 24px 60px rgba(120, 64, 180, .45);
+  filter: drop-shadow(0 24px 30px rgba(120, 64, 180, .45));
 }
 
 .door-head {
@@ -231,7 +301,6 @@ a:focus-visible {
   justify-content: center;
   width: 48px;
   height: 48px;
-  border-radius: 999px;
   transition: transform .2s ease;
 }
 
@@ -240,12 +309,12 @@ a:focus-visible {
 }
 
 .door-it .door-arrow {
-  background: var(--ink);
+  --b-fill: var(--ink);
   color: var(--gold);
 }
 
 .door-gamedev .door-arrow {
-  background: #FFFFFF;
+  --b-fill: #FFFFFF;
   color: var(--purple);
 }
 
@@ -262,11 +331,13 @@ a:focus-visible {
   min-height: 150px;
   aspect-ratio: 16 / 10;
   object-fit: cover;
-  border-radius: 16px;
+  --c: var(--cut);
+  clip-path: polygon(var(--c) 0, 100% 0, 100% calc(100% - var(--c)), calc(100% - var(--c)) 100%, 0 100%, 0 var(--c));
 }
 
 .theme-it {
   --bg: #FAF8F2;
+  --exp-shadow: rgba(122, 82, 0, .22);
   --fg: var(--ink);
   --band: var(--gold);
   --band-fg: var(--ink);
@@ -301,6 +372,7 @@ a:focus-visible {
 
 .theme-gamedev {
   --bg: var(--night);
+  --exp-shadow: rgba(120, 64, 180, .45);
   --fg: #F5F1FA;
   --band: var(--purple);
   --band-fg: #FFFFFF;
@@ -345,9 +417,7 @@ a:focus-visible {
   gap: 8px;
   min-height: 44px;
   padding: 0 14px;
-  border-radius: 10px;
   text-decoration: none;
-  transition: background .2s;
 }
 
 .back {
@@ -358,7 +428,7 @@ a:focus-visible {
 
 .back:hover,
 a.tab:hover {
-  background: var(--tab-hover);
+  --b-fill: var(--tab-hover);
 }
 
 .tabs {
@@ -371,13 +441,8 @@ a.tab:hover {
 }
 
 .tab.is-current {
-  background: var(--tab-current-bg);
+  --b-fill: var(--tab-current-bg);
   color: var(--tab-current-fg);
-  font-weight: 700;
-}
-
-.tab-cv {
-  border: 2px solid currentColor;
   font-weight: 700;
 }
 
@@ -409,6 +474,51 @@ a.tab:hover {
   color: var(--band-soft);
 }
 
+.door,
+.skill,
+.exp {
+  position: relative;
+  isolation: isolate;
+}
+
+.door::before,
+.skill::before,
+.skill::after,
+.exp::before,
+.exp::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  --c: var(--cut);
+  background: var(--card-bg);
+  clip-path: polygon(var(--c) 0, 100% 0, 100% calc(100% - var(--c)), calc(100% - var(--c)) 100%, 0 100%, 0 var(--c));
+}
+
+.skill::before,
+.exp::before {
+  --card-bg: var(--border);
+}
+
+.skill::after,
+.exp::after {
+  inset: 1px;
+  --c: calc(var(--cut) - .4px);
+  --card-bg: var(--surface);
+}
+
+.exp {
+  transition: filter .25s ease;
+}
+
+.exp:hover {
+  filter: drop-shadow(0 0 24px var(--exp-shadow));
+}
+
+.exp:hover::before {
+  --card-bg: var(--accent);
+}
+
 .skills {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
@@ -421,9 +531,6 @@ a.tab:hover {
   flex-direction: column;
   gap: 10px;
   padding: 20px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 16px;
 }
 
 .skill-name {
@@ -462,12 +569,6 @@ a.tab:hover {
   letter-spacing: -.02em;
 }
 
-.count {
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--muted);
-}
-
 .exp-list {
   display: flex;
   flex-direction: column;
@@ -477,10 +578,7 @@ a.tab:hover {
 .exp {
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+  padding: 1px;
 }
 
 .exp-media {
@@ -489,14 +587,19 @@ a.tab:hover {
   min-width: min(100%, 240px);
   min-height: 260px;
   background: var(--media-bg);
+  --c: calc(var(--cut) - .4px);
+  clip-path: polygon(var(--c) 0, 100% 0, 100% 100%, 0 100%, 0 var(--c));
 }
 
 .exp-media img {
-  position: absolute;
-  inset: 0;
+  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  transition: transform .4s ease;
+}
+
+.exp:hover .exp-media img {
+  transform: scale(1.05);
 }
 
 .exp-placeholder {
@@ -643,12 +746,12 @@ a.tab:hover {
   gap: 8px;
   min-height: 44px;
   padding: 0 14px;
-  border: 1px solid var(--link-border);
-  border-radius: 10px;
+  --bw: 1px;
+  --b-line: var(--link-border);
   font-size: 15px;
   font-weight: 500;
   text-decoration: none;
-  transition: background .2s, color .2s, border-color .2s;
+  transition: color .2s, filter .25s;
 }
 
 .ext .icon {
@@ -656,9 +759,14 @@ a.tab:hover {
   height: 14px;
 }
 
-.ext:hover {
-  background: var(--link-hover-bg);
-  border-color: var(--link-hover-bg);
+.exp:hover .ext {
+  --b-line: var(--accent);
+  filter: drop-shadow(0 0 8px var(--exp-shadow));
+}
+
+.exp .ext:hover {
+  --b-fill: var(--link-hover-bg);
+  --b-line: var(--link-hover-bg);
   color: var(--link-hover-fg);
 }
 
@@ -722,21 +830,20 @@ a.tab:hover {
   gap: 8px;
   min-height: 44px;
   padding: 0 16px;
-  border-radius: 10px;
   text-decoration: none;
 }
 
 .footer-link {
-  border: 1px solid var(--footer-border);
-  transition: background .2s;
+  --bw: 1px;
+  --b-line: var(--footer-border);
 }
 
 .footer-link:hover {
-  background: rgba(255, 255, 255, .1);
+  --b-fill: rgba(255, 255, 255, .1);
 }
 
 .footer-switch {
-  background: var(--switch-bg);
+  --b-fill: var(--switch-bg);
   color: var(--switch-fg);
   font-weight: 700;
 }

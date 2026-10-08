@@ -8,7 +8,6 @@ layout: default
     <nav class="tabs" aria-label="Portfolio sections">
       {% if page.side == "it" %}<span class="tab is-current" aria-current="page">IT engineering</span>{% else %}<a class="tab" href="{{ '/it/' | relative_url }}">IT engineering</a>{% endif %}
       {% if page.side == "gamedev" %}<span class="tab is-current" aria-current="page">Game dev</span>{% else %}<a class="tab" href="{{ '/gamedev/' | relative_url }}">Game dev</a>{% endif %}
-      <a class="tab tab-cv" href="{{ site.cv_en | relative_url }}">{% include icon.html name="download" %}CV</a>
     </nav>
   </header>
 
@@ -31,12 +30,7 @@ layout: default
     {% endfor %}
   </section>
 
-  <section class="section" aria-labelledby="experience">
-    <div class="section-head">
-      <h2 id="experience">{{ d.experience_title }}</h2>
-      <span class="count">{{ d.experiences | size }} entries</span>
-    </div>
-
+  <section class="section" aria-label="{{ d.experience_title }}">
     <div class="exp-list">
       {% for e in d.experiences %}
       <article class="exp">

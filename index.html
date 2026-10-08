@@ -14,15 +14,15 @@ gamedev_images:
 ---
 <header class="wrap topbar">
   <span class="site-url">vbeauzee.github.io</span>
-  <nav class="pills" aria-label="Resume downloads">
-    <a class="pill" href="{{ site.cv_en | relative_url }}">{% include icon.html name="download" %}CV · EN</a>
-    <a class="pill" href="{{ site.cv_fr | relative_url }}">{% include icon.html name="download" %}CV · FR</a>
+  <nav class="pills" aria-label="Site">
+    <a class="pill" href="{{ '/it/' | relative_url }}">IT engineering</a>
+    <a class="pill pill-gamedev" href="{{ '/gamedev/' | relative_url }}">Game dev</a>
   </nav>
 </header>
 
 <main class="wrap home-main">
   <section class="intro">
-    <img class="avatar" src="{{ '/img/avatar.png' | relative_url }}" alt="Pixel-art portrait of Vincent Beauzée" width="128" height="136">
+    <span class="avatar"><img src="{{ '/img/avatar.png' | relative_url }}" alt="Pixel-art portrait of Vincent Beauzée" width="128" height="136"></span>
     <div class="intro-text">
       <h1>{{ site.title }}</h1>
       <p class="tagline">Game developer · IT engineer</p>

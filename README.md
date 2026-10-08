@@ -14,6 +14,6 @@ bundle exec jekyll serve
 - `_data/it.yml`: IT engineering page
 - `_data/gamedev.yml`: game development page
 - `_data/logos.yml`: technology logos, files in `img/logos/`
-- `_config.yml`: contact links and CV files
+- `_config.yml`: contact links
 
 Each experience accepts an `image` path. When it is empty, the card shows its `label` and `logos` instead.
