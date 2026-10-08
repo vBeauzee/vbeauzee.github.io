@@ -1,0 +1,17 @@
+android: Android
+angular: Angular
+cplusplus: C++
+csharp: "C#"
+docker: Docker
+gitlab: GitLab CI
+godot: Godot
+java: Java
+kubernetes: Kubernetes
+mongodb: MongoDB
+php: PHP
+postgresql: PostgreSQL
+spring: Spring Boot
+symfony: Symfony
+typescript: TypeScript
+unity: Unity
+vuejs: Vue.js

@@ -1,14 +1,21 @@
-# Site settings
-title:Vincent Beauzee
-email:vincentbeauzee@gmail.com
-description:Personnal website 
-# this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+title: Vincent Beauzée
+description: Game developer and IT engineer
+lang: en
+baseurl: ""
+url: "https://vbeauzee.github.io"
 
-twitter_username:VincentBeauzee
-github_username:vBeauzee
-linkedin_url:vincent-beauzee-57396037
+email: vincentbeauzee@gmail.com
+linkedin: https://www.linkedin.com/in/vincent-beauzee-57396037
+github: https://github.com/vBeauzee
+bluesky: https://bsky.app/profile/torpenngames.bsky.social
+cv_en: /download/CV-EN.pdf
+cv_fr: /download/CV-FR.pdf
 
-# Build settings
 markdown: kramdown
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+  - .claude

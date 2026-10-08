@@ -1,0 +1,116 @@
+---
+layout: default
+---
+{% assign d = site.data[page.side] %}
+<div class="band">
+  <header class="wrap topbar">
+    <a class="back" href="{{ '/' | relative_url }}">{% include icon.html name="back" %}{{ site.title }}</a>
+    <nav class="tabs" aria-label="Portfolio sections">
+      {% if page.side == "it" %}<span class="tab is-current" aria-current="page">IT engineering</span>{% else %}<a class="tab" href="{{ '/it/' | relative_url }}">IT engineering</a>{% endif %}
+      {% if page.side == "gamedev" %}<span class="tab is-current" aria-current="page">Game dev</span>{% else %}<a class="tab" href="{{ '/gamedev/' | relative_url }}">Game dev</a>{% endif %}
+      <a class="tab tab-cv" href="{{ site.cv_en | relative_url }}">{% include icon.html name="download" %}CV</a>
+    </nav>
+  </header>
+
+  <section class="wrap hero">
+    <div class="hero-text">
+      <p class="eyebrow">{{ d.eyebrow }}</p>
+      <h1>{{ d.title }}</h1>
+      <p class="hero-intro">{{ d.intro }}</p>
+    </div>
+    <div class="logo-grid hero-logos">
+      {% for logo in d.logos %}{% include logo.html name=logo %}{% endfor %}
+    </div>
+  </section>
+</div>
+
+<main class="wrap">
+  <section class="skills" aria-label="Skills">
+    {% for group in d.skills %}
+    <div class="skill">
+      <h2 class="skill-name">{{ group.name }}</h2>
+      <p>{{ group.items }}</p>
+    </div>
+    {% endfor %}
+  </section>
+
+  <section class="section" aria-labelledby="experience">
+    <div class="section-head">
+      <h2 id="experience">{{ d.experience_title }}</h2>
+      <span class="count">{{ d.experiences | size }} entries</span>
+    </div>
+
+    <div class="exp-list">
+      {% for e in d.experiences %}
+      <article class="exp">
+        <div class="exp-media">
+          {% if e.image and e.image != "" %}
+          <img src="{{ e.image | relative_url }}" alt="{{ e.title }}" loading="lazy">
+          {% else %}
+          <div class="exp-placeholder">
+            <span class="exp-label">{{ e.label | default: e.title }}</span>
+            <span class="exp-logos">{% for logo in e.logos %}{% include logo.html name=logo %}{% endfor %}</span>
+          </div>
+          {% endif %}
+        </div>
+        <div class="exp-body">
+          <div class="exp-meta">
+            <span class="period">{{ e.period }}</span>
+            <span class="studio">{{ e.studio }}</span>
+          </div>
+          <h3>{{ e.title }}</h3>
+          <p class="role">{{ e.role }}</p>
+          <ul class="details">
+            {% for item in e.details %}<li>{{ item }}</li>{% endfor %}
+          </ul>
+          <div class="exp-foot">
+            <ul class="stack">
+              {% for tech in e.stack %}<li>{{ tech }}</li>{% endfor %}
+            </ul>
+            {% if e.links %}
+            <div class="exp-links">
+              {% for link in e.links %}<a class="ext" href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}{% include icon.html name="external" %}</a>{% endfor %}
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  {% if d.education %}
+  <section class="section" aria-labelledby="education">
+    <div class="section-head">
+      <h2 id="education">Education</h2>
+    </div>
+    <div class="edu-list">
+      {% for edu in d.education %}
+      <div class="edu">
+        <span class="period">{{ edu.year }}</span>
+        <div>
+          <h3>{{ edu.title }}</h3>
+          <p>{{ edu.text }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <a class="footer-mail" href="mailto:{{ site.email }}">{{ site.email }}</a>
+    <nav class="footer-links" aria-label="Elsewhere">
+      <a class="footer-link" href="{{ site.linkedin }}">LinkedIn</a>
+      <a class="footer-link" href="{{ site.github }}">GitHub</a>
+      <a class="footer-link" href="{{ site.bluesky }}">Bluesky</a>
+      {% if page.side == "it" %}
+      <a class="footer-switch switch-gamedev" href="{{ '/gamedev/' | relative_url }}">Game dev side{% include icon.html name="arrow" %}</a>
+      {% else %}
+      <a class="footer-switch switch-it" href="{{ '/it/' | relative_url }}">IT side{% include icon.html name="arrow" %}</a>
+      {% endif %}
+    </nav>
+  </div>
+</footer>
