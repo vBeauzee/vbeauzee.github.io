@@ -1,16 +1,16 @@
 eyebrow: Game development · 10 years
 title: Programming Gameplay, Gamefeel, Tools & Ports.
-intro: Gameplay, tool & UI programmer. Gamefeel & VFX. Mobile and console ports. Performance and profiling.
+intro: Gameplay programmer with a taste for gamefeel and VFX. Also experienced in tool development, UI integration, and performance analysis and profiling.
 
 skills:
   - name: Languages
-    items: ["C#", C, C++, Objective-C, Java, Lua]
+    items: ["C#", C/C++/Obj-C, Java, Lua]
   - name: Engines
     items: [Unity, SDL, SFML, C++ engines (in-house)]
   - name: Skills
     items: ["Gameplay, tool & UI programmer", Console & mobile ports, Gamefeel & VFX, Profiling & optimisation]
   - name: Tools
-    items: [Visual Studio, Rider, Perforce, Git, Xcode, Dear ImGui, PIX]
+    items: [Visual Studio / Rider / Xcode, Git / SVN / Perforce, Dear ImGui, PIX]
 
 experience_title: Games
 
@@ -21,7 +21,8 @@ experiences:
     role: Lead mobile · iOS tech lead
     image: /img/gamedev/sk-cover.jpg
     details:
-      - Led the mobile porting team. Port Shotgun King to iOS (iPhone and iPad); lead and support on the Android version.
+      - Led the mobile porting team.
+      - Ported Shotgun King to iOS (iPhone and iPad); lead and support on the Android version.
       - Sugar-Engine, in-house tech inspired by PICO-8 made with C++ and SDL2 and Lua.
       - iOS integration with Objective-C++ in Xcode.
       - More than 500k units on Steam.
@@ -43,8 +44,8 @@ experiences:
       - Fully remote team.
     stack: [C++, In-house engine, Dear ImGui, VFX]
     links:
-      - label: deathtower.com
-        url: https://deathtower.com
+      - label: Steam
+        url: https://store.steampowered.com/app/1143910/DeathTower/
 
   - title: Fretless – The Wrath of Riffson
     studio: Ritual Studios
@@ -53,6 +54,7 @@ experiences:
     image: /img/gamedev/fretless-cover.jpg
     details:
       - Built level-design tools and enemy behaviour.
+      - Unity with C# and Perforce.
       - Performance consulting.
       - US-based team, working remotely.
     stack: [Unity, "C#", Perforce, Visual Studio]
@@ -66,8 +68,8 @@ experiences:
     role: XBOX porting engineer
     image: /img/gamedev/minishoot-cover.jpg
     details:
-      - XBOX port and Game Pass integration.
-      - Ongoing support on the Xbox build.
+      - XBOX PC port and Game Pass integration.
+      - Unity.
       - More than 1M units on Steam.
     stack: [Unity, "C#", Xbox, Game Pass]
     links:
@@ -81,7 +83,7 @@ experiences:
     image: /img/gamedev/bsg-cover.jpg
     details:
       - Performance analysis and optimisation consulting.
-      - Profiling with the Unity frame debugger and memory profiler, and with Microsoft PIX.
+      - Unity, memory profiler, frame debugger and Microsoft PIX.
     stack: [Unity, "C#", Microsoft PIX, Profiling]
     links:
       - label: Steam
@@ -93,9 +95,9 @@ experiences:
     role: Gameplay & UI programmer
     image: /img/gamedev/pharaoh-cover.jpg
     details:
-      - The original source code was lost, so the game was rebuilt entirely in Unity and C#.
-      - Worked on all of the UI, the battle system and building/worker behaviour.
-      - A commercial success.
+      - The original source code was lost, so the game was entirely remade in Unity and C#.
+      - UI integration, the battle system and building/worker behaviour.
+      - A commercial success!
     stack: [Unity, "C#", UI, Gameplay]
     links:
       - label: Steam
@@ -109,13 +111,12 @@ experiences:
     image_center: true
     image_bg: "#FFFFFF"
     details:
-      - Co-founded a cooperative video game distributor (SCIC) that opens digital stores and consoles to indie creators and pools technical and accounting costs.
+      - Co-founder of a video game publishing/distribution cooperative, set up as an SCIC.
       - Set up the technical, administrative and banking side with Google Play, the App Store, Steam, GOG, Humble Store, Nintendo eShop, PlayStation Store, Xbox Store (and more).
       - Portfolio of 13 indie games on 15 platforms, with partners in the USA, Japan, Poland, Ireland, Brazil, Korea and more.
       - Business development, negotiation and contract management with studios.
-      - Technical support for indie studios on performance and porting.
-      - Creative consulting for indie studios.
-      - Technical director for the in-house tech for accounting and royalties automation.
+      - Technical and creative consulting for indie studios.
+      - Technical director for the in-house tech automating accounting and royalty calculation.
     stack: [Publishing, Console & store relations, Contracts]
     links:
       - label: ty.games
@@ -130,7 +131,7 @@ experiences:
       - Creative direction
       - Game design.
       - Programming Java LibGDX.
-    stack: [Creative direction, Programming, Distribution]
+    stack: [Java, LibGDX, Creative direction, Programming, Distribution]
     links:
       - label: Steam
         url: https://store.steampowered.com/app/386560/Psycho_Starship_Rampage/

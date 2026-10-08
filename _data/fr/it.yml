@@ -1,0 +1,145 @@
+eyebrow: Ingénierie logicielle · depuis 2011
+title: Full-stack, DevOps & architecture.
+intro: Lead développeur et architecte logiciel. j'ai conçu et développé des systèmes d'informations complexes pour grand compte, des ERP, des API, des Middleware des applications mobiles. Spécialiste de la CI/CD et de l'automatisation. DevOps et consultant je peux intervenir sur n'importe quel parties de votre stack technique, du hardware au front-end. 
+skills:
+  - name: Langages
+    items: [Java, "C#", C/C++/Obj-C, PHP, TypeScript, JavaScript]
+  - name: Frameworks
+    items: [Spring Boot, Vue, Angular 2+, Flutter, Symfony, .NET]
+  - name: DevOps
+    items: [Docker, Docker Swarm, UNIX, OVH, Jenkins, GitLab CI]
+  - name: Données & plateformes
+    items: [PostgreSQL, MongoDB, RabbitMQ, Aerospike, UNIX, iOS/Android]
+
+experience_title: Expériences
+
+experiences:
+  - title: ERP TyGAMES
+    studio: TyGAMES SCIC
+    period: 2022 – aujourd’hui
+    role: Architecte & lead développeur
+    image: /img/it/tygames-erp.jpg
+    label: TyGAMES
+    logos: [java, spring, postgresql, docker]
+    details:
+      - Conception et développement de l’ERP interne de TyGAMES, la coopérative de distribution de jeux vidéo que j’ai cofondée.
+      - Automatise la gestion le calcul des royautés, la business intelligence.
+      - Consomme les données brutes issues des multiples canaux de ventes (Steam, Playstation, XBOX, Nintendo, Apple, Google, etc.)
+      - Back-end Java Spring Boot sur PostgreSQL avec un front-end C# .NET, déployé en autoamtisé avec Docker sur Ubuntu.
+    stack: [Java, Spring Boot, PostgreSQL, "C# .NET", Docker, Ubuntu]
+    links:
+      - label: ty.games
+        url: https://ty.games
+
+  - title: Kinexo & MyKinexo
+    studio: Alkante · pour Timwi Consulting
+    period: 2016 – 2021
+    role: Développeur full-stack & mobile
+    image: ""
+    label: Kinexo
+    logos: [java, spring, vuejs, postgresql, docker, kubernetes]
+    details:
+      - Développeur full-stack sur la solution comptable Kinexo SAS.
+      - Développeur mobile (iOS et Android) sur l’application dédiée MyKinexo.
+      - Back-end Java Spring Boot avec PostgreSQL, front-end Vue 2.
+      - Architecture micro-services reposant sur des API REST et RabbitMQ, déploiement en CI/CD via Docker sur Kubernetes.
+    stack: [Java, Spring Boot, Vue 2, PostgreSQL, RabbitMQ, Docker, Kubernetes, iOS, Android]
+    links:
+      - label: kinexo.fr
+        url: https://www.kinexo.fr
+      - label: MyKinexo
+        url: https://www.kinexo.fr/mykinexo/
+
+  - title: Serveur réseau LoRaWAN
+    studio: Alkante · pour Kerlink
+    period: 2016 – 2021
+    role: Architecte & lead développeur IoT
+    image: ""
+    label: Kerlink
+    logos: [cplusplus, docker]
+    details:
+      - Implémentation du protocole LoRaWAN en C++ optimisé pour Kerlink.
+      - Architecture scalable et haute disponibilité reposant sur des conteneurs Docker et une file Aerospike.
+      - Répartition de charge et orchestration avec Docker Swarm.
+    stack: [C++, LoRaWAN, Docker, Docker Swarm, Aerospike]
+    links:
+      - label: kerlink.fr
+        url: https://www.kerlink.fr
+
+  - title: E-commerce Roullier
+    studio: Alkante · pour le Groupe Roullier
+    period: 2016 – 2021
+    role: Développeur full-stack
+    image: ""
+    label: Roullier
+    logos: [angular, typescript, mongodb, symfony]
+    details:
+      - Développeur full-stack sur une solution e-commerce pour le Groupe Roullier.
+      - Angular 2+ en TypeScript sur une base MongoDB.
+      - Développement de plusieurs outils internes d'analyse et de collecte de données en PHP Symfony.
+    stack: [Angular 2+, TypeScript, MongoDB, PHP, Symfony]
+    links:
+      - label: roullier.com
+        url: https://www.roullier.com
+
+  - title: Étude posturale vélo Morphologics
+    studio: Alkante · pour Morphologics
+    period: 2016 – 2021
+    role: Lead développeur back-end
+    image: ""
+    label: MLSize
+    logos: [php, symfony, android]
+    details:
+      - Lead développeur back-end sur le système postural Morphologics.
+      - Réimplémentation en PHP Symfony de l’algorithme breveté de calcul posturale pour cyclistes, utilisé par des athlètes olympiques.
+      - Application déployée sur tablettes Android avec Laravel pour la cabine MLSize.
+    stack: [PHP, Symfony, Android]
+    links:
+      - label: morpho-logics.com
+        url: https://www.morpho-logics.com
+
+  - title: Catalogue d’offres SFR
+    studio: Sopra Group · pour SFR
+    period: 2011 – 2016
+    role: Lead développeur back-end
+    image: ""
+    label: SFR
+    logos: [java]
+    details:
+      - Lead développeur back-end sur l’application de catalogue d’offres de BIOS (le coeur du système d'information de SFR).
+      - Donne aux équipes marketing de SFR une liberté totale pour configurer le parcours client, et une mise en vente des nouvelles offres en quelques jours.
+      - Back-end Java communiquant avec le reste du système d’information via Apache CXF, avec un moteur de contraintes Caméléon Software intégré.
+    stack: [Java, Apache CXF, Caméléon]
+
+  - title: CRM service client SFR
+    studio: Sopra Group · pour SFR
+    period: 2011 – 2016
+    role: Développeur front-end
+    image: ""
+    label: SFR
+    logos: [java]
+    details:
+      - Développeur front-end sur l’application de relation client de SFR.
+      - Application Google Web Toolkit consommant l’API Apache CXF du back-end de gestion client.
+    stack: [GWT, Java, Apache CXF]
+
+  - title: Interface tactile de radiogoniométrie
+    studio: Thales Communications & Security
+    period: "2011"
+    role: Stagiaire R&D
+    image: ""
+    label: Thales
+    logos: []
+    details:
+      - État de l’art des interfaces tactiles pour la guerre électronique.
+      - Conception d’un prototype d’interface tactile pour un capteur de goniométrie (radiogoniométrie).
+      - L’outil facilite la localisation des émissions radio et est destiné aux soldats en zone de conflit.
+    stack: [R&D, Interface tactile, Prototypage]
+
+education:
+  - year: "2011"
+    title: "Master Informatique : images & réseaux"
+    text: Université de Bretagne-Sud, Vannes. Le cycle complet d’un projet, de la conception initiale à la livraison finale.
+  - year: "2011"
+    title: Licence Informatique & Mathématiques
+    text: Université de Bretagne-Sud, Vannes. Langages, frameworks et les mathématiques derrière les algorithmes complexes.

@@ -1,0 +1,137 @@
+eyebrow: Développement de jeux vidéo · 10 ans
+title: Programmation gameplay, gamefeel, outils & portages.
+intro: Programmeur gameplay avec une appétence pour le gamefeel et les VFX. Aussi expérimenté en développement d'outils, intégration UI et en analyse des performances et profiling.
+
+skills:
+  - name: Langages
+    items: ["C#", C/C++/Obj-C, Java, Lua]
+  - name: Moteurs
+    items: [Unity, SDL, SFML, Moteurs C++ (internes)]
+  - name: Compétences
+    items: ["Programmation gameplay, outils & UI", Portages console & mobile, Gamefeel & VFX, Profilage & optimisation]
+  - name: Outils
+    items: [Visual Studio / Rider / Xcode, Git / SVN / Perforce, Dear ImGui, PIX]
+
+experience_title: Jeux
+
+experiences:
+  - title: Shotgun King
+    studio: Puncake Délicieux · Headbang Club
+    period: 2025
+    role: Lead mobile · Tech lead iOS
+    image: /img/gamedev/sk-cover.jpg
+    details:
+      - Direction de l’équipe de portage mobile. 
+      - Portage de Shotgun King sur iOS (iPhone et iPad) ; lead et support sur la version Android.
+      - Sugar-Engine, technologie interne inspirée de PICO-8, développée en C++ avec SDL2 et Lua.
+      - Intégration iOS en Objective-C++ sous Xcode.
+      - Plus de 500 000 exemplaires vendus sur Steam.
+    stack: [C++, Objective-C++, SDL2, Xcode, Lua, iOS, Android]
+    links:
+      - label: App Store
+        url: https://apps.apple.com/fr/app/shotgun-king/id6744170498
+      - label: Google Play
+        url: https://play.google.com/store/apps/details?id=com.pid.shotgunking
+
+  - title: DeathTower
+    studio: Headbang Club
+    period: 2026
+    role: Lead gamefeel, VFX & armes
+    image: /img/gamedev/deathtower-cover.jpg
+    details:
+      - Lead sur le gamefeel, les VFX et l’arsenal.
+      - Moteur C++ interne, entièrement optimisé pour des performances maximales, avec des outils Dear ImGui.
+      - Équipe entièrement en télétravail.
+    stack: [C++, Moteur interne, Dear ImGui, VFX]
+    links:
+      - label: Steam
+        url: https://store.steampowered.com/app/1143910/DeathTower/
+
+  - title: Fretless – The Wrath of Riffson
+    studio: Ritual Studios
+    period: 2024
+    role: Programmeur gameplay & outils
+    image: /img/gamedev/fretless-cover.jpg
+    details:
+      - Développement d’outils de level design et du comportement des ennemis.
+      - Unity avec C# et Perforce.
+      - Conseil en performance.
+      - Équipe basée aux États-Unis, en télétravail.
+    stack: [Unity, "C#", Perforce, Visual Studio]
+    links:
+      - label: Steam
+        url: https://store.steampowered.com/app/2429050/Fretless__The_Wrath_of_Riffson/
+
+  - title: Minishoot’ Adventures
+    studio: Seaven Studio
+    period: 2025
+    role: Ingénieur portage XBOX
+    image: /img/gamedev/minishoot-cover.jpg
+    details:
+      - Portage XBOX PC et intégration au Game Pass.
+      - Unity
+      - Plus d’un million d’exemplaires vendus sur Steam.
+    stack: [Unity, "C#", Xbox, Game Pass]
+    links:
+      - label: XBOX Store
+        url: https://www.xbox.com/fr-FR/games/store/minishoot-adventures/9N5PKH0KW2L1
+
+  - title: "Battlestar Galactica: Scattered Hopes"
+    studio: Alt-Shift
+    period: 2025
+    role: Consultant performance & optimisation
+    image: /img/gamedev/bsg-cover.jpg
+    details:
+      - Analyse des performances et conseil en optimisation.
+      - Unity, memory profiler, frame debugger et Microsoft PIX.
+    stack: [Unity, "C#", Microsoft PIX, Profilage]
+    links:
+      - label: Steam
+        url: https://store.steampowered.com/app/2535950/Battlestar_Galactica_Scattered_Hopes/
+
+  - title: "Pharaoh: A New Era"
+    studio: Triskell Interactive
+    period: 2022 – 2023
+    role: Programmeur gameplay & UI
+    image: /img/gamedev/pharaoh-cover.jpg
+    details:
+      - Le code source original ayant été perdu, le jeu a été entièrement refait sous Unity en C#.
+      - Intégration UI, le système de combat et le comportement des bâtiments et des ouvriers.
+      - Un succès commercial !
+    stack: [Unity, "C#", UI, Gameplay]
+    links:
+      - label: Steam
+        url: https://store.steampowered.com/app/1351080/Pharaoh_A_New_Era/
+
+  - title: TyGAMES
+    studio: TyGAMES SCIC
+    period: 2022 – aujourd’hui
+    role: Cofondateur, président & CTO
+    image: /img/gamedev/tygames-cover.jpg
+    image_center: true
+    image_bg: "#FFFFFF"
+    details:
+      - Cofondateur d’une coopérative d'édition/distribution de jeux vidéo au format SCIC.
+      - Mise en place des aspects techniques, administratifs et bancaires avec Google Play, l’App Store, Steam, GOG, Humble Store, Nintendo eShop, PlayStation Store, Xbox Store (et d’autres).
+      - Catalogue de 13 jeux indépendants sur 15 plateformes, avec des partenaires aux États-Unis, au Japon, en Pologne, en Irlande, au Brésil, en Corée et ailleurs.
+      - Développement commercial, négociation et gestion des contrats avec les studios.
+      - Consulting technique et créatif aux studios indépendants.
+      - Directeur technique de la technologie interne d’automatisation de la comptabilité et du calcul des royautés.
+    stack: [Édition, Relations consoles & stores, Contrats]
+    links:
+      - label: ty.games
+        url: https://ty.games
+
+  - title: Psycho Starship Rampage
+    studio: Indépendant
+    period: "2015"
+    role: Directeur créatif & programmeur
+    image: /img/gamedev/psr-cover.jpg
+    details:
+      - Direction créative.
+      - Game design.
+      - Programmation en Java avec LibGDX.
+    stack: [Java, LibGDX, Direction créative, Programmation, Distribution]
+    links:
+      - label: Steam
+        url: https://store.steampowered.com/app/386560/Psycho_Starship_Rampage/

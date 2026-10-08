@@ -1,14 +1,20 @@
 ---
 layout: default
 ---
-{% assign d = site.data[page.side] %}
+{% assign lang = page.lang | default: site.lang %}
+{% assign t = site.data.i18n[lang] %}
+{% if lang == "fr" %}{% assign base = "/fr" %}{% else %}{% assign base = "" %}{% endif %}
+{% assign d = site.data[lang][page.side] %}
 <div class="band">
   <header class="wrap topbar">
-    <a class="back" href="{{ '/' | relative_url }}">{% include icon.html name="back" %}{{ site.title }}</a>
-    <nav class="tabs" aria-label="Portfolio sections">
-      {% if page.side == "it" %}<span class="tab is-current" aria-current="page">IT engineering</span>{% else %}<a class="tab" href="{{ '/it/' | relative_url }}">IT engineering</a>{% endif %}
-      {% if page.side == "gamedev" %}<span class="tab is-current" aria-current="page">Game dev</span>{% else %}<a class="tab" href="{{ '/gamedev/' | relative_url }}">Game dev</a>{% endif %}
-    </nav>
+    <a class="back" href="{{ base | append: '/' | relative_url }}">{% include icon.html name="back" %}{{ site.title }}</a>
+    <div class="topbar-end">
+      <nav class="tabs" aria-label="{{ t.sections_nav }}">
+        {% if page.side == "it" %}<span class="tab is-current" aria-current="page">{{ t.it }}</span>{% else %}<a class="tab" href="{{ base | append: '/it/' | relative_url }}">{{ t.it }}</a>{% endif %}
+        {% if page.side == "gamedev" %}<span class="tab is-current" aria-current="page">{{ t.gamedev }}</span>{% else %}<a class="tab" href="{{ base | append: '/gamedev/' | relative_url }}">{{ t.gamedev }}</a>{% endif %}
+      </nav>
+      {% include lang-switch.html class="lang" %}
+    </div>
   </header>
 
   <section class="wrap hero">
@@ -19,7 +25,7 @@ layout: default
 </div>
 
 <main class="wrap">
-  <section class="skills" aria-label="Skills">
+  <section class="skills" aria-label="{{ t.skills }}">
     {% for group in d.skills %}
     <div class="skill">
       <h2 class="skill-name">{{ group.name }}</h2>
@@ -73,7 +79,7 @@ layout: default
   {% if d.education %}
   <section class="section" aria-labelledby="education">
     <div class="section-head">
-      <h2 id="education">Education</h2>
+      <h2 id="education">{{ t.education }}</h2>
     </div>
     <div class="edu-list">
       {% for edu in d.education %}
@@ -91,8 +97,8 @@ layout: default
 </main>
 
 <footer class="footer">
-  <nav class="wrap footer-links" aria-label="Contact">
-    <a class="footer-link" href="mailto:{{ site.email }}" aria-label="Email" title="Email">{% include icon.html name="mail" %}</a>
+  <nav class="wrap footer-links" aria-label="{{ t.contact }}">
+    <a class="footer-link" href="mailto:{{ site.email }}" aria-label="{{ t.email }}" title="{{ t.email }}">{% include icon.html name="mail" %}</a>
     <a class="footer-link" href="{{ site.linkedin }}" aria-label="LinkedIn" title="LinkedIn">{% include icon.html name="linkedin" %}</a>
     <a class="footer-link" href="{{ site.github }}" aria-label="GitHub" title="GitHub">{% include icon.html name="github" %}</a>
     <a class="footer-link" href="{{ site.bluesky }}" aria-label="Bluesky" title="Bluesky">{% include icon.html name="bluesky" %}</a>

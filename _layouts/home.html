@@ -1,0 +1,62 @@
+---
+layout: default
+it_logos: [java, spring, vuejs, angular, typescript, php, cplusplus, postgresql, mongodb, docker, kubernetes, gitlab]
+gamedev_images:
+  - src: /img/gamedev/sk.jpg
+    alt: Shotgun King
+  - src: /img/gamedev/minishoot.jpg
+    alt: "Minishoot’ Adventures"
+  - src: /img/gamedev/pharaoh.jpg
+    alt: "Pharaoh: A New Era"
+  - src: /img/gamedev/fretless.jpg
+    alt: "Fretless – The Wrath of Riffson"
+---
+{% assign lang = page.lang | default: site.lang %}
+{% assign t = site.data.i18n[lang] %}
+{% if lang == "fr" %}{% assign base = "/fr" %}{% else %}{% assign base = "" %}{% endif %}
+<header class="wrap topbar">
+  <span class="site-url">vbeauzee.github.io</span>
+  <nav class="pills" aria-label="{{ t.site_nav }}">
+    <a class="pill" href="{{ base | append: '/it/' | relative_url }}">{{ t.it }}</a>
+    <a class="pill pill-gamedev" href="{{ base | append: '/gamedev/' | relative_url }}">{{ t.gamedev }}</a>
+    {% include lang-switch.html class="pill" %}
+  </nav>
+</header>
+
+<main class="wrap home-main">
+  <section class="intro">
+    <img class="avatar" src="{{ '/img/avatar.png' | relative_url }}" alt="{{ t.avatar_alt }}" width="152" height="160">
+    <div class="intro-text">
+      <h1>{{ site.title }}</h1>
+      <p class="tagline">{{ t.tagline }}</p>
+    </div>
+  </section>
+
+  <nav class="pills socials" aria-label="{{ t.social_nav }}">
+    <a class="pill pill-lg" href="{{ site.linkedin }}">{% include icon.html name="linkedin" %}LinkedIn</a>
+    <a class="pill pill-lg" href="{{ site.github }}">{% include icon.html name="github" %}GitHub</a>
+    <a class="pill pill-lg" href="{{ site.bluesky }}">{% include icon.html name="bluesky" %}Bluesky</a>
+    <a class="pill pill-lg" href="mailto:{{ site.email }}">{% include icon.html name="mail" %}{{ t.email }}</a>
+  </nav>
+
+  <div class="doors">
+    <a class="door door-it" href="{{ base | append: '/it/' | relative_url }}">
+      <span class="door-head">
+        <span class="door-label">{{ t.it }}</span>
+        <span class="door-arrow">{% include icon.html name="arrow" %}</span>
+      </span>
+      <span class="logo-grid">
+        {% for logo in layout.it_logos %}{% include logo.html name=logo %}{% endfor %}
+      </span>
+    </a>
+    <a class="door door-gamedev" href="{{ base | append: '/gamedev/' | relative_url }}">
+      <span class="door-head">
+        <span class="door-label">{{ t.gamedev_long }}</span>
+        <span class="door-arrow">{% include icon.html name="arrow" %}</span>
+      </span>
+      <span class="shot-grid">
+        {% for shot in layout.gamedev_images %}<img src="{{ shot.src | relative_url }}" alt="{{ shot.alt }}" loading="lazy">{% endfor %}
+      </span>
+    </a>
+  </div>
+</main>

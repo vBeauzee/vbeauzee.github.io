@@ -1,16 +1,15 @@
-eyebrow: IT engineering · since 2011
+eyebrow: Software engineering · since 2011
 title: Full-stack, DevOps & architecture.
-intro: Telecom, accounting, e-commerce and IoT software, from the first architecture sketch to production.
-
+intro: Lead developer and software architect. I have designed and built complex information systems for large enterprises, ERPs, APIs, middleware and mobile apps. CI/CD and automation specialist. As a DevOps engineer and consultant, I can work on any part of your tech stack, from hardware to front-end.
 skills:
   - name: Languages
-    items: [Java, "C#", C/C++, PHP, TypeScript, JavaScript]
+    items: [Java, "C#", C/C++/Obj-C, PHP, TypeScript, JavaScript]
   - name: Frameworks
     items: [Spring Boot, Vue, Angular 2+, Flutter, Symfony, .NET]
   - name: DevOps
-    items: [Docker, Kubernetes, Docker Swarm, Jenkins, GitLab CI, OVH, Azure]
+    items: [Docker, Docker Swarm, UNIX, OVH, Jenkins, GitLab CI]
   - name: Data & platforms
-    items: [PostgreSQL, MongoDB, RabbitMQ, Aerospike, UNIX, iOS, Android]
+    items: [PostgreSQL, MongoDB, RabbitMQ, Aerospike, UNIX, iOS/Android]
 
 experience_title: Experience
 
@@ -23,9 +22,10 @@ experiences:
     label: TyGAMES
     logos: [java, spring, postgresql, docker]
     details:
-      - Designed and led development of the internal ERP of TyGAMES, the cooperative game distributor I co-founded.
-      - Automates release management across stores and consoles, plus customer relations, invoicing and business intelligence.
-      - Java Spring Boot back-end on PostgreSQL with a C# .NET front-end, deployed with Docker on Ubuntu.
+      - Designed and developed the internal ERP of TyGAMES, the cooperative game distributor I co-founded.
+      - Automates royalty calculation and business intelligence.
+      - Ingests raw data from multiple sales channels (Steam, PlayStation, XBOX, Nintendo, Apple, Google, etc.).
+      - Java Spring Boot back-end on PostgreSQL with a C# .NET front-end, with automated deployment via Docker on Ubuntu.
     stack: [Java, Spring Boot, PostgreSQL, "C# .NET", Docker, Ubuntu]
     links:
       - label: ty.games
@@ -42,7 +42,7 @@ experiences:
       - Full-stack developer on the Kinexo SAS accounting solution.
       - Mobile developer (iOS and Android) on the dedicated MyKinexo app.
       - Java Spring Boot back-end with PostgreSQL, Vue 2 front-end.
-      - Micro-service architecture over REST APIs and RabbitMQ, shipped through CI/CD as Docker containers on Kubernetes.
+      - Micro-service architecture over REST APIs and RabbitMQ, deployed through CI/CD with Docker on Kubernetes.
     stack: [Java, Spring Boot, Vue 2, PostgreSQL, RabbitMQ, Docker, Kubernetes, iOS, Android]
     links:
       - label: kinexo.fr
@@ -76,7 +76,7 @@ experiences:
     details:
       - Full-stack developer on an e-commerce solution for Groupe Roullier.
       - Angular 2+ with TypeScript on a MongoDB database.
-      - Built several internal tools in PHP Symfony.
+      - Built several internal data-collection and analysis tools in PHP Symfony.
     stack: [Angular 2+, TypeScript, MongoDB, PHP, Symfony]
     links:
       - label: roullier.com
@@ -91,8 +91,8 @@ experiences:
     logos: [php, symfony, android]
     details:
       - Lead back-end developer on the Morphologics posture system.
-      - Re-implemented the high-performance bike-fit calculation algorithm, used by Olympic athletes, in PHP Symfony.
-      - Application deployed on Android tablets for the MLSize product.
+      - Re-implemented the patented cyclist posture calculation algorithm, used by Olympic athletes, in PHP Symfony.
+      - Application deployed on Android tablets with Laravel for the MLSize booth.
     stack: [PHP, Symfony, Android]
     links:
       - label: morpho-logics.com
@@ -106,8 +106,8 @@ experiences:
     label: SFR
     logos: [java]
     details:
-      - Lead back-end developer on the offer-catalogue application of BIOS, SFR’s ERP.
-      - Gave SFR marketing teams full freedom to configure the customer journey.
+      - Lead back-end developer on the offer-catalogue application of BIOS (the core of SFR’s information system).
+      - Gave SFR marketing teams full freedom to configure the customer journey, and to launch new offers within days.
       - Java back-end talking to the rest of the information system over Apache CXF, with an integrated Caméléon Software constraint engine.
     stack: [Java, Apache CXF, Caméléon]
 
@@ -119,7 +119,7 @@ experiences:
     label: SFR
     logos: [java]
     details:
-      - Front-end developer on SFR’s customer-relationship management application.
+      - Front-end developer on SFR’s customer-relationship application.
       - Google Web Toolkit app consuming the Apache CXF API of the customer-management back-end.
     stack: [GWT, Java, Apache CXF]
 

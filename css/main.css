@@ -108,6 +108,7 @@ a:focus-visible {
 .pill,
 .back,
 .tab,
+.lang,
 .ext,
 .footer-link,
 .door-arrow {
@@ -121,6 +122,8 @@ a:focus-visible {
 .back::after,
 .tab::before,
 .tab::after,
+.lang::before,
+.lang::after,
 .ext::before,
 .ext::after,
 .footer-link::before,
@@ -139,6 +142,7 @@ a:focus-visible {
 .pill::before,
 .back::before,
 .tab::before,
+.lang::before,
 .ext::before,
 .footer-link::before,
 .door-arrow::before {
@@ -148,6 +152,7 @@ a:focus-visible {
 .pill::after,
 .back::after,
 .tab::after,
+.lang::after,
 .ext::after,
 .footer-link::after,
 .door-arrow::after {
@@ -353,6 +358,10 @@ a:focus-visible {
   --footer-hover-fg: var(--ink);
   --switch-bg: var(--purple);
   --switch-fg: #FFFFFF;
+  --lang-bg: var(--gold);
+  --lang-fg: var(--ink);
+  --lang-hover-bg: var(--ink);
+  --lang-hover-fg: #FFFFFF;
 }
 
 .theme-gamedev {
@@ -390,10 +399,15 @@ a:focus-visible {
   --footer-hover-fg: var(--ink);
   --switch-bg: var(--gold);
   --switch-fg: var(--ink);
+  --lang-bg: var(--purple);
+  --lang-fg: #FFFFFF;
+  --lang-hover-bg: #FFFFFF;
+  --lang-hover-fg: var(--purple);
 }
 
 .back,
-.tab {
+.tab,
+.lang {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -434,6 +448,31 @@ a.tab:hover {
   --b-fill: var(--tab-current-bg);
   color: var(--tab-current-fg);
   font-weight: 700;
+}
+
+.topbar-end {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.lang {
+  --b-fill: var(--lang-bg);
+  color: var(--lang-fg);
+  font-size: 17px;
+  font-weight: 500;
+  transition: color .2s;
+}
+
+.lang:hover {
+  --b-fill: var(--lang-hover-bg);
+  color: var(--lang-hover-fg);
+}
+
+.flag {
+  display: block;
+  flex: none;
 }
 
 .band {
@@ -761,7 +800,6 @@ a.tab:hover {
 }
 
 .exp:hover .ext {
-  --b-line: var(--accent);
   filter: drop-shadow(0 0 8px var(--exp-shadow));
 }
 

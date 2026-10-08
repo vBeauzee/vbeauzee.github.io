@@ -1,0 +1,35 @@
+en:
+  description: IT engineer and game developer
+  tagline: IT engineer · Game developer
+  it: IT engineering
+  gamedev: GameDev
+  gamedev_long: Game development
+  avatar_alt: Pixel-art portrait of Vincent Beauzée
+  site_nav: Site
+  social_nav: Social links
+  sections_nav: Portfolio sections
+  skills: Skills
+  education: Education
+  contact: Contact
+  email: Email
+  switch_to: fr
+  switch_label: FR
+  switch_name: Version française
+
+fr:
+  description: Ingénieur IT et développeur de jeux vidéo
+  tagline: Ingénieur IT · Développeur de jeux vidéo
+  it: Ingénieur IT
+  gamedev: GameDev
+  gamedev_long: Développement de jeux vidéo
+  avatar_alt: Portrait en pixel art de Vincent Beauzée
+  site_nav: Site
+  social_nav: Réseaux sociaux
+  sections_nav: Sections du portfolio
+  skills: Compétences
+  education: Formation
+  contact: Contact
+  email: E-mail
+  switch_to: en
+  switch_label: EN
+  switch_name: English version
