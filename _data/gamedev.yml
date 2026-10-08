@@ -106,6 +106,8 @@ experiences:
     period: 2022 – today
     role: Co-founder, president & CTO
     image: /img/gamedev/tygames-cover.jpg
+    image_center: true
+    image_bg: "#FFFFFF"
     details:
       - Co-founded a cooperative video game distributor (SCIC) that opens digital stores and consoles to indie creators and pools technical and accounting costs.
       - Set up the technical, administrative and banking side with Google Play, the App Store, Steam, GOG, Humble Store, Nintendo eShop, PlayStation Store, Xbox Store (and more).
