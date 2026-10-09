@@ -35,7 +35,7 @@ experiences:
     studio: Alkante · pour Timwi Consulting
     period: 2016 – 2021
     role: Développeur full-stack & mobile
-    image: ""
+    image: /img/it/kinexo.jpg
     label: Kinexo
     logos: [java, spring, vuejs, postgresql, docker, kubernetes]
     details:
@@ -54,7 +54,7 @@ experiences:
     studio: Alkante · pour Kerlink
     period: 2016 – 2021
     role: Architecte & lead développeur IoT
-    image: ""
+    image: /img/it/kerlink.jpg
     label: Kerlink
     logos: [cplusplus, docker]
     details:
@@ -70,7 +70,7 @@ experiences:
     studio: Alkante · pour le Groupe Roullier
     period: 2016 – 2021
     role: Développeur full-stack
-    image: ""
+    image: /img/it/roullier.jpg
     label: Roullier
     logos: [angular, typescript, mongodb, symfony]
     details:
@@ -86,7 +86,7 @@ experiences:
     studio: Alkante · pour Morphologics
     period: 2016 – 2021
     role: Lead développeur back-end
-    image: ""
+    image: /img/it/morphologics.jpg
     label: MLSize
     logos: [php, symfony, android]
     details:
@@ -102,7 +102,7 @@ experiences:
     studio: Sopra Group · pour SFR
     period: 2011 – 2016
     role: Lead développeur back-end
-    image: ""
+    image: /img/it/sfr-catalogue.jpg
     label: SFR
     logos: [java]
     details:
@@ -115,7 +115,7 @@ experiences:
     studio: Sopra Group · pour SFR
     period: 2011 – 2016
     role: Développeur front-end
-    image: ""
+    image: /img/it/sfr-crm.jpg
     label: SFR
     logos: [java]
     details:
@@ -127,7 +127,7 @@ experiences:
     studio: Thales Communications & Security
     period: "2011"
     role: Stagiaire R&D
-    image: ""
+    image: /img/it/thales.jpg
     label: Thales
     logos: []
     details:
