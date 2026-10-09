@@ -15,6 +15,20 @@ skills:
 experience_title: Jeux
 
 experiences:
+  - title: DeathTower
+    studio: Headbang Club
+    period: 2026
+    role: Lead gamefeel, VFX & armes
+    image: /img/gamedev/deathtower-cover.jpg
+    details:
+      - Lead sur le gamefeel, les VFX et l’arsenal.
+      - Moteur C++ interne, entièrement optimisé pour des performances maximales, avec des outils Dear ImGui.
+      - Équipe entièrement en télétravail.
+    stack: [C++, Moteur interne, Dear ImGui, VFX]
+    links:
+      - label: Steam
+        url: https://store.steampowered.com/app/1143910/DeathTower/
+
   - title: Shotgun King
     studio: Puncake Délicieux · Headbang Club
     period: 2025
@@ -33,34 +47,18 @@ experiences:
       - label: Google Play
         url: https://play.google.com/store/apps/details?id=com.pid.shotgunking
 
-  - title: DeathTower
-    studio: Headbang Club
-    period: 2026
-    role: Lead gamefeel, VFX & armes
-    image: /img/gamedev/deathtower-cover.jpg
+  - title: "Battlestar Galactica: Scattered Hopes"
+    studio: Alt-Shift
+    period: 2025
+    role: Consultant performance & optimisation
+    image: /img/gamedev/bsg-cover.jpg
     details:
-      - Lead sur le gamefeel, les VFX et l’arsenal.
-      - Moteur C++ interne, entièrement optimisé pour des performances maximales, avec des outils Dear ImGui.
-      - Équipe entièrement en télétravail.
-    stack: [C++, Moteur interne, Dear ImGui, VFX]
+      - Analyse des performances et conseil en optimisation.
+      - Unity, memory profiler, frame debugger et Microsoft PIX.
+    stack: [Unity, "C#", Microsoft PIX, Profilage]
     links:
       - label: Steam
-        url: https://store.steampowered.com/app/1143910/DeathTower/
-
-  - title: Fretless – The Wrath of Riffson
-    studio: Ritual Studios
-    period: 2024
-    role: Programmeur gameplay & outils
-    image: /img/gamedev/fretless-cover.jpg
-    details:
-      - Développement d’outils de level design et du comportement des ennemis.
-      - Unity avec C# et Perforce.
-      - Conseil en performance.
-      - Équipe basée aux États-Unis, en télétravail.
-    stack: [Unity, "C#", Perforce, Visual Studio]
-    links:
-      - label: Steam
-        url: https://store.steampowered.com/app/2429050/Fretless__The_Wrath_of_Riffson/
+        url: https://store.steampowered.com/app/2535950/Battlestar_Galactica_Scattered_Hopes/
 
   - title: Minishoot’ Adventures
     studio: Seaven Studio
@@ -76,32 +74,20 @@ experiences:
       - label: XBOX Store
         url: https://www.xbox.com/fr-FR/games/store/minishoot-adventures/9N5PKH0KW2L1
 
-  - title: "Battlestar Galactica: Scattered Hopes"
-    studio: Alt-Shift
-    period: 2025
-    role: Consultant performance & optimisation
-    image: /img/gamedev/bsg-cover.jpg
+  - title: Fretless – The Wrath of Riffson
+    studio: Ritual Studios
+    period: 2024
+    role: Programmeur gameplay & outils
+    image: /img/gamedev/fretless-cover.jpg
     details:
-      - Analyse des performances et conseil en optimisation.
-      - Unity, memory profiler, frame debugger et Microsoft PIX.
-    stack: [Unity, "C#", Microsoft PIX, Profilage]
+      - Développement d’outils de level design et du comportement des ennemis.
+      - Unity avec C# et Perforce.
+      - Conseil en performance.
+      - Équipe basée aux États-Unis, en télétravail.
+    stack: [Unity, "C#", Perforce, Visual Studio]
     links:
       - label: Steam
-        url: https://store.steampowered.com/app/2535950/Battlestar_Galactica_Scattered_Hopes/
-
-  - title: "Pharaoh: A New Era"
-    studio: Triskell Interactive
-    period: 2022 – 2023
-    role: Programmeur gameplay & UI
-    image: /img/gamedev/pharaoh-cover.jpg
-    details:
-      - Le code source original ayant été perdu, le jeu a été entièrement refait sous Unity en C#.
-      - Intégration UI, le système de combat et le comportement des bâtiments et des ouvriers.
-      - Un succès commercial !
-    stack: [Unity, "C#", UI, Gameplay]
-    links:
-      - label: Steam
-        url: https://store.steampowered.com/app/1351080/Pharaoh_A_New_Era/
+        url: https://store.steampowered.com/app/2429050/Fretless__The_Wrath_of_Riffson/
 
   - title: TyGAMES
     studio: TyGAMES SCIC
@@ -121,6 +107,20 @@ experiences:
     links:
       - label: ty.games
         url: https://ty.games
+
+  - title: "Pharaoh: A New Era"
+    studio: Triskell Interactive
+    period: 2022 – 2023
+    role: Programmeur gameplay & UI
+    image: /img/gamedev/pharaoh-cover.jpg
+    details:
+      - Le code source original ayant été perdu, le jeu a été entièrement refait sous Unity en C#.
+      - Intégration UI, le système de combat et le comportement des bâtiments et des ouvriers.
+      - Un succès commercial !
+    stack: [Unity, "C#", UI, Gameplay]
+    links:
+      - label: Steam
+        url: https://store.steampowered.com/app/1351080/Pharaoh_A_New_Era/
 
   - title: Psycho Starship Rampage
     studio: Indépendant

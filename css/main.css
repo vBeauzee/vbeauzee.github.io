@@ -325,7 +325,7 @@ a:focus-visible {
 
 .theme-it {
   --bg: #FAF8F2;
-  --exp-shadow: rgba(122, 82, 0, .22);
+  --exp-shadow: rgba(253, 185, 39, .7);
   --fg: var(--ink);
   --band: var(--gold);
   --band-fg: var(--ink);

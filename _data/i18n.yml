@@ -17,9 +17,9 @@ en:
   switch_name: Version française
 
 fr:
-  description: Ingénieur IT et développeur de jeux vidéo
-  tagline: Ingénieur IT · Développeur de jeux vidéo
-  it: Ingénieur IT
+  description: Ingénieur logiciel et développeur de jeux vidéo
+  tagline: Ingénieur logiciel · Développeur de jeux vidéo
+  it: Ingénieur logiciel
   gamedev: GameDev
   gamedev_long: Développement de jeux vidéo
   avatar_alt: Portrait en pixel art de Vincent Beauzée

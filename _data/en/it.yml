@@ -33,11 +33,11 @@ experiences:
 
   - title: Kinexo & MyKinexo
     studio: Alkante · for Timwi Consulting
-    period: 2016 – 2021
+    period: 2019 – 2021
     role: Full-stack & mobile developer
     image: /img/it/kinexo.jpg
     label: Kinexo
-    logos: [java, spring, vuejs, postgresql, docker, kubernetes]
+    logos: [java, spring, vuejs, postgresql, docker, xcode]
     details:
       - Full-stack developer on the Kinexo SAS accounting solution.
       - Mobile developer (iOS and Android) on the dedicated MyKinexo app.
@@ -50,25 +50,9 @@ experiences:
       - label: MyKinexo
         url: https://www.kinexo.fr/mykinexo/
 
-  - title: LoRaWAN network server
-    studio: Alkante · for Kerlink
-    period: 2016 – 2021
-    role: Architect & lead IoT developer
-    image: /img/it/kerlink.jpg
-    label: Kerlink
-    logos: [cplusplus, docker]
-    details:
-      - Implemented the LoRaWAN protocol in optimised C++ for Kerlink.
-      - Scalable, high-availability architecture built on Docker containers and an Aerospike queue.
-      - Load-balancing and orchestration with Docker Swarm.
-    stack: [C++, LoRaWAN, Docker, Docker Swarm, Aerospike]
-    links:
-      - label: kerlink.fr
-        url: https://www.kerlink.fr
-
   - title: Roullier e-commerce
     studio: Alkante · for Groupe Roullier
-    period: 2016 – 2021
+    period: 2017 – 2018
     role: Full-stack developer
     image: /img/it/roullier.jpg
     label: Roullier
@@ -82,9 +66,25 @@ experiences:
       - label: roullier.com
         url: https://www.roullier.com
 
+  - title: LoRaWAN network server
+    studio: Alkante · for Kerlink
+    period: "2016"
+    role: Architect & lead IoT developer
+    image: /img/it/kerlink.jpg
+    label: Kerlink
+    logos: [cplusplus, docker]
+    details:
+      - Implemented the LoRaWAN protocol in optimised C++ for Kerlink.
+      - Scalable, high-availability architecture built on Docker containers and an Aerospike queue.
+      - Load-balancing and orchestration with Docker Swarm.
+    stack: [C++, LoRaWAN, Docker, Docker Swarm, Aerospike]
+    links:
+      - label: kerlink.fr
+        url: https://www.kerlink.fr
+
   - title: Morphologics bike fitting
     studio: Alkante · for Morphologics
-    period: 2016 – 2021
+    period: "2016"
     role: Lead back-end developer
     image: /img/it/morphologics.jpg
     label: MLSize
@@ -100,7 +100,7 @@ experiences:
 
   - title: SFR offer catalogue
     studio: Sopra Group · for SFR
-    period: 2011 – 2016
+    period: 2013 – 2016
     role: Lead back-end developer
     image: /img/it/sfr-catalogue.jpg
     label: SFR
@@ -113,7 +113,7 @@ experiences:
 
   - title: SFR customer care CRM
     studio: Sopra Group · for SFR
-    period: 2011 – 2016
+    period: 2011 – 2013
     role: Front-end developer
     image: /img/it/sfr-crm.jpg
     label: SFR
